@@ -1,7 +1,7 @@
 exports.up = function(knex) {
 return knex.schema.createTable('url', (url) => {
     url.increments();
-    url.text("api-url",200).notNullable().unique()
+    url.text("link",200).notNullable().unique()
 })  
 };
 
