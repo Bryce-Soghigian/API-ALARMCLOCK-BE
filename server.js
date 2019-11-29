@@ -1,6 +1,7 @@
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
+const URLROUTER = require('./Router/url-router')
 
 
 //================INIT===================================//
@@ -20,4 +21,6 @@ server.listen(PORT, () => {
 server.get("/", (req,res) => {
     res.json({"message":"Hey i am alive"})
 })
+
+server.use('/url',URLROUTER)
 

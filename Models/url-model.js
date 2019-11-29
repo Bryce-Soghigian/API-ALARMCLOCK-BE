@@ -1,12 +1,15 @@
 const db = require("../config/db-config");
 
-module.exports = {
-    getURL,
-    addURL,
-    updateURL,
-    deleteURL
-}
 
 const getURL = () => {
-    return db.select('*').from('tbl');
+    return db.select('*').from('url');
+}
+const addURL = (newurl) => {
+return db("url").insert(newurl,"id")
+}
+module.exports = {
+    getURL,
+    addURL
+    // updateURL,
+    // deleteURL
 }
