@@ -60,7 +60,7 @@ server.use('/url',URLROUTER)
 
 
 //=============Time=====================================//
-setInterval(getOnInterval,100000)
+setInterval(getOnInterval,1000000)
 setImmediate((arg) => {
 
 setInterval(PingOnInterval, 174000);
