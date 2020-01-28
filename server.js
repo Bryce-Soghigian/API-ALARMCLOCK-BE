@@ -31,7 +31,7 @@ const getOnInterval = () => {
     }).catch((err) => {
         console.error(err)
     })
-    for(let i = 0;i<arr.length;I++){
+    for(let i = 0;i<arr.length;i++){
         arr.push(arr[i])
     }
 }
